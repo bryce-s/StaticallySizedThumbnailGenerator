@@ -24,7 +24,7 @@ def save_image(image: Image, filename: str):
 
 def generate_filename(imageName: str, sizeTag: str):
     splitImageName: list = imageName.split('.')
-    if sizeTag != "-s" and sizeTag != "-l":
+    if sizeTag != "-sm" and sizeTag != "-lg":
         print("invalid sizetag")
         exit()
     return f'{splitImageName[0]}{sizeTag}.{splitImageName[1]}'
