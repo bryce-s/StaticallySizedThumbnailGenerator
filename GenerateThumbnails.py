@@ -39,8 +39,8 @@ def open_and_resize_image(imageName: str):
     smallImage = image.resize(smallSize)
     medImage = image.resize(medSize)
 
-    save_image(smallImage, generate_filename(imageName, "-s"))
-    save_image(medImage, generate_filename(imageName, "-l"))
+    save_image(smallImage, generate_filename(imageName, "-sm"))
+    save_image(medImage, generate_filename(imageName, "-lg"))
 
 
 def absoluteFilePaths(directory):
